@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechNova</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   
+
+    <div class="navMenu">
+
+        <h1>TechNova</h1>
+
+        <ul>
+        <li><a href="index.html">Početna</a></li>
+
+        <li><a href="about.html">O nama</a></li>
+
+        <li><a href="reservation.html">Rezervacije</a></li>
+
+        <li><a href="contact.html">Kontakt</a></li>
+
+        </ul>
+
+       
+
+        <div class="themeButtons">
+
+            <button onclick="document.body.style.background='black'" class="dark"></button>
+
+            <button onclick="document.body.style.background='darkblue'" class="blue"></button>
+
+            <button onclick="document.body.style.background='#0f172a'" class="darkblue"></button>
+
+        </div>
+
+    </div>
+
+  
+
+    <section class="hero">
+
+        <div class="heroText">
+
+            
+
+            <h2>Igraj bez granica</h2>
+
+            <p>
+                Gaming oprema, telefoni i laptopovi po najboljim cenama.
+            </p>
+
+        </div>
+
+    </section>
+
+  
+
+    <section class="products">
+
+        <h2>Popularni artikli</h2>
+
+        <div class="productGrid" id="productGrid">
+
+    
+    <a href="https://rog.asus.com/laptops/rog-zephyrus/rog-zephyrus-g14-2026-gu405/" target="_blank" class="card">
+
+        <img src="slike/asus.jpg" alt="">
+        <h3>ASUS ROG Zephyrus G14</h3>
+        <p>159.999 RSD</p>
+
+    </a>
+
+    
+    <a href="https://www.samsung.com/rs/smartphones/galaxy-z-fold7/buy/" target="_blank" class="card">
+
+        <img src="slike/zFold.jpg" alt="">
+        <h3>Samsung Z Fold 7</h3>
+        <p>89.999 RSD</p>
+
+    </a>
+
+    
+    <a href="https://www.razer.com/gaming-headsets/razer-kraken-v3" target="_blank" class="card">
+
+        <img src="slike/razer.png" alt="">
+        <h3>Razer Kraken V2</h3>
+        <p>12.999 RSD</p>
+
+    </a>
+
+</div>
+
+        <button onclick="toggleProducts()" class="showBtn">
+
+            Prikaži / Sakrij
+
+        </button>
+
+    </section>
+
+    <section class="categories">
+
+    <h2>Kategorije</h2>
+
+    <div class="categoryGrid">
+
+    <a href="https://playstation.com" target="_blank" class="categoryCard">
+        <img src="slike/ps.avif" alt="">
+        <h3>PlayStation</h3>
+    </a>
+
+    <a href="https://xbox.com" target="_blank" class="categoryCard">
+        <img src="slike/xbox.jpg" alt="">
+        <h3>Xbox</h3>
+    </a>
+
+    <a href="https://nintendo.com" target="_blank" class="categoryCard">
+        <img src="slike/nintendo.png" alt="">
+        <h3>Nintendo</h3>
+    </a>
+
+    <a href="https://funko.com" target="_blank" class="categoryCard">
+        <img src="slike/funko-logo.png" alt="">
+        <h3>Akcione figurice</h3>
+    </a>
+
+    <a href="https://hyperx.com" target="_blank" class="categoryCard">
+        <img src="slike/hyperx.jpg" alt="">
+        <h3>Gaming Slušalice</h3>
+    </a>
+
+    <a href="https://gigatron.rs/laptop-racunari-i-it-oprema/racunari/desktop-racunari" target="_blank" class="categoryCard">
+        <img src="slike/prebuilt.png" alt="">
+        <h3>Gotovi računari</h3>
+    </a>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+    <div class="footerContainer">
+
+        
+
+        <div class="footerSection">
+            <h2>TechNova</h2>
+            <p>Pravo mesto za vašu opremu!</p>
+        </div>
+
+        <div class="footerSection">
+            <h3>Linkovi</h3>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+
+                <li><a href="about.html">O nama</a></li>
+
+                <li><a href="reservation.html">Rezervacije</a></li>
+
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+       
+
+        <div class="footerSection">
+
+            <h3>Kontakt</h3>
+
+            <p>Email: technova@gmail.com</p>
+
+            <p>Phone: +381 61 234 567</p>
+
+            <p>Belgrade, Serbia</p>
+
+        </div>
+
+    </div>
+
+   
+
+    <div class="footerBottom">
+
+        <p>
+            © 2026 TechNova. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

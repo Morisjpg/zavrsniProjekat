@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navMenu">
+    <h1>TechNova</h1>
+
+    <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="about.html">O nama</a></li>
+        <li><a href="reservation.html">Rezervacije</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+
+    <div class="themeButtons">
+        <button onclick="document.body.style.background='black'" class="dark"></button>
+        <button onclick="document.body.style.background='darkblue'" class="blue"></button>
+        <button onclick="document.body.style.background='#0f172a'" class="darkblue"></button>
+    </div>
+</div>
+
+<section class="reservation">
+
+    <div class="reservationBox">
+
+        <h2>Popuni rezervaciju</h2>
+
+        <form class="form">
+            <input type="text" placeholder="Ime i prezime">
+            <input type="email" placeholder="Email">
+            <input type="date" placeholder="Datum">
+            <input type="time" placeholder="Vreme">
+            <input type="text" placeholder="Predmet">
+
+
+            <button type="submit">Rezerviši</button>
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="footerContainer">
+        <div class="footerSection">
+            <h2>TechNova</h2>
+            <p>Pravo mesto za vašu opremu!</p>
+        </div>
+
+        <div class="footerSection">
+            <h3>Linkovi</h3>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="about.html">O nama</a></li>
+                <li><a href="reservation.html">Rezervacije</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="footerSection">
+            <h3>Kontakt</h3>
+            <p>Email: technova@gmail.com</p>
+            <p>Phone: +381 61 234 567</p>
+            <p>Belgrade, Serbia</p>
+        </div>
+    </div>
+
+    <div class="footerBottom">
+        <p>© 2026 TechNova. All rights reserved.</p>
+    </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>

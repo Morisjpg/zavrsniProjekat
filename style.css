@@ -1,0 +1,605 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+html,
+body{
+
+    overflow-x:hidden;
+    background:#0f172a;
+    color:white;
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+
+.navMenu{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111827;
+    flex-wrap:wrap;
+}
+.heroText img{
+        width: 1000px;
+    height: 500px;
+    padding: 15px;
+    border-radius: 25px;
+    position: absolute;
+    left: 500px;
+    top: 120px;
+    z-index: -1;
+    
+}
+.navMenu h1{
+    color:#facc15;
+}
+
+.navMenu ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.navMenu ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navMenu ul li a:hover{
+    color:#38bdf8;
+}
+
+
+
+.themeButtons{
+    display:flex;
+    gap:10px;
+}
+
+.themeButtons button{
+    width:20px;
+    height:20px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.dark{
+    background:black;
+}
+
+.blue{
+    background:darkblue;
+}
+
+.darkblue{
+    background:#0f172a;
+}
+
+
+
+.hero{
+    height:500px;
+
+    background-size:cover;
+    background-image: url('slike/blurred-background-vibrant-creative-gaming-600nw-2655956027.jpg');
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:8%;
+    justify-content: center;
+}
+
+.heroText{
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+.products{
+    padding:60px 8%;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.productGrid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:30px;
+     text-decoration:none;
+    color:white;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    cursor: pointer;
+    outline:none;
+    text-decoration: none;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    color:white;
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit: cover;
+    
+    
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+    color:#facc15;
+    font-weight:bold;
+}
+
+.showBtn{
+    margin-top:30px;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#38bdf8;
+    color:black;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+.categories{
+
+    padding:60px 8%;
+}
+
+.categories h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    font-size:40px;
+}
+
+
+
+.categoryGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+}
+
+
+
+.categoryCard{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.categoryCard:hover{
+
+    transform:scale(1.03);
+}
+
+
+
+.categoryCard img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+
+
+.categoryCard::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.4);
+
+    transition:0.3s;
+}
+
+.categoryCard:hover::before{
+
+    background:rgba(0,0,0,0.2);
+}
+
+
+
+.categoryCard h3{
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:20px;
+
+    color:white;
+
+    font-size:28px;
+
+    z-index:1;
+}
+
+
+
+
+
+
+
+footer{
+
+    background:#0b1120;
+
+    margin-top:60px;
+
+    padding-top:50px;
+
+    border-top:2px solid #38bdf8;
+}
+
+.footerContainer{
+
+    width:85%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+}
+
+.footerSection h2,
+.footerSection h3{
+
+    margin-bottom:20px;
+
+    color:#38bdf8;
+}
+
+.footerSection p{
+
+    color:#d1d5db;
+
+    line-height:1.7;
+}
+
+.footerSection ul{
+
+    list-style:none;
+}
+
+.footerSection ul li{
+
+    margin-bottom:10px;
+}
+
+.footerSection ul li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:0.3s;
+}
+
+.footerSection ul li a:hover{
+
+    color:#38bdf8;
+}
+
+
+
+.footerBottom{
+
+    margin-top:40px;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-top:1px solid #1e293b;
+
+    color:#9ca3af;
+}
+
+
+
+
+
+.aboutPage,
+.contactPage,
+.reservation{
+    padding:80px;
+    display:flex;
+    justify-content:center;
+}
+
+.aboutBox,
+.contactBox,
+.reservationBox{
+    background:#1e293b;
+    padding:40px;
+    width:500px;
+}
+
+.aboutBox h2,
+.contactBox h2,
+.reservationBox h2{
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+.contactBox form,
+.reservationBox form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    
+}
+
+input{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    position: relative;
+    
+   
+    
+    
+}
+
+button{
+    padding:12px;
+    background:#38bdf8;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    position: relative;
+  
+    
+}
+
+
+footer{
+    margin-top:auto;
+}
+
+
+
+ /* PC */
+
+@media(min-width:1200px){
+
+    .heroText h2{
+
+        font-size:70px;
+    }
+
+    .productGrid,
+    .categoryGrid{
+
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    
+}
+
+ /* tablet */
+
+@media(max-width:1199px){
+
+    .navMenu{
+
+        padding:20px 5%;
+    }
+
+    .hero{
+
+        height:500px;
+    }
+
+    .heroText h2{
+
+        font-size:50px;
+    }
+
+    .heroText p{
+
+        font-size:20px;
+    }
+
+    .productGrid,
+    .categoryGrid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:20px;
+    }
+
+    .card img{
+
+        height:300px;
+    }
+
+    .categoryCard img{
+
+        height:250px;
+    }
+
+    .footerContainer{
+
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+ /* telefon */
+
+@media(max-width:767px){
+
+    html,
+    body{
+
+        overflow-x:hidden;
+    }
+
+    
+
+    .navMenu{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+    }
+
+    .navMenu ul{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:15px;
+    }
+
+    
+
+    .hero{
+
+        height:400px;
+
+        padding:20px;
+    }
+
+    .heroText{
+
+        width:100%;
+    }
+
+    .heroText h2{
+
+        font-size:36px;
+
+        line-height:1.2;
+    }
+
+    .heroText p{
+
+        font-size:18px;
+    }
+
+   
+
+    .products,
+    .categories{
+
+        padding:40px 5%;
+    }
+
+    
+
+    .productGrid,
+    .categoryGrid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+    }
+
+    
+
+    .card img{
+
+        height:240px;
+    }
+
+    .categoryCard img{
+
+        height:220px;
+    }
+
+    .categoryCard h3{
+
+        font-size:22px;
+    }
+
+    
+
+    .footerContainer{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:30px;
+    }
+
+    .footerBottom{
+
+        font-size:14px;
+    }
+}
